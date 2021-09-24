@@ -32,8 +32,9 @@ export class AppComponent {
     let fileContent = this.saveFileContent;
     // let fileContent = JSON.stringify( {name: "test name"} );
   
-    const link = document.createElement("a");
     const file = new Blob([fileContent], { type: "text/plain" });
+  
+    const link = document.createElement("a");
     link.href = URL.createObjectURL(file);
     link.download = fileName;
     link.click();

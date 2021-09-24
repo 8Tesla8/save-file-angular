@@ -13,9 +13,9 @@
 
 <h1>SAVE FILE</h1>
 
-<input type="text" [(ngModel)]="saveFileName" placeholder="file name" /> 
-<input type="text" [(ngModel)]="saveFileContent" placeholder="file content" /> 
-<input type="text" [(ngModel)]="saveFileExtension" placeholder="file extension" /> 
+<label>File name</label> <input type="text" [(ngModel)]="saveFileName"/> <br/>
+<label>File content:</label> <input type="text" [(ngModel)]="saveFileContent" /> <br/> 
+<label>File extension:</label> <input type="text" [(ngModel)]="saveFileExtension" /> <br/> 
 
 <button 
 (click)="onSaveFile()"> Save file
